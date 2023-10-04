@@ -1,0 +1,9 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: 01_jupyter.ipynb
+- file: 02_jupyterhub.ipynb
+- file: 90_troubleshoot.ipynb
