@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>情報処理教育システムでのプログラミング学習環境 &#8212; Zero to VIORAS</title>
+    <title>ファイル共有 &#8212; Zero to VIORAS</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '01_jupyter';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '50_fileshare';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="VIORAS JupyterHubへの接続と終了" href="02_jupyterhub.html" />
-    <link rel="prev" title="Zero to VIORAS JupyterHub" href="intro.html" />
+    <link rel="next" title="トラブルシュート" href="90_troubleshoot.html" />
+    <link rel="prev" title="VIORAS JupyterHubへの接続と終了" href="02_jupyterhub.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -167,9 +167,9 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">情報処理教育システムでのプログラミング学習環境</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_jupyter.html">情報処理教育システムでのプログラミング学習環境</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_jupyterhub.html">VIORAS JupyterHubへの接続と終了</a></li>
-<li class="toctree-l1"><a class="reference internal" href="50_fileshare.html">ファイル共有</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">ファイル共有</a></li>
 <li class="toctree-l1"><a class="reference internal" href="90_troubleshoot.html">トラブルシュート</a></li>
 </ul>
 
@@ -225,7 +225,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://ecsosaka-jh2300.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/vioras/z2vioras&urlpath=lab/tree/z2vioras/01_jupyter.ipynb&branch=main" target="_blank"
+      <li><a href="https://ecsosaka-jh2300.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/vioras/z2vioras&urlpath=lab/tree/z2vioras/50_fileshare.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onJupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,7 +273,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/vioras/z2vioras/issues/new?title=Issue%20on%20page%20%2F01_jupyter.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/vioras/z2vioras/issues/new?title=Issue%20on%20page%20%2F50_fileshare.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -303,7 +303,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/01_jupyter.ipynb" target="_blank"
+      <li><a href="_sources/50_fileshare.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -385,7 +385,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>情報処理教育システムでのプログラミング学習環境</h1>
+    <h1>ファイル共有</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -395,9 +395,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter">Jupyterとは</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows仮想デスクトップ・サービス</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vioras-jupyterhub">VIORAS JupyterHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-filer-browser">JupyterLab Filer Browser</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ファイルのアップロード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ファイルのダウンロード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">アーカイブ・ファイルのアップロードとダウンロード</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">プログラミングでの大規模なファイルの利用</a></li>
 </ul>
             </nav>
         </div>
@@ -410,51 +414,80 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>情報処理教育システムでのプログラミング学習環境<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<p>2023年度版学生用</p>
-<p>情報処理教育システムでは、主に二つのプログラミング学習環境を提供しています。</p>
-<ol class="arabic simple">
-<li><p>Windows仮想デスクトップ・サービスのAnaconda Navigator</p></li>
-<li><p>VIORAS JupyterHub</p></li>
-</ol>
-<p>いずれでもJupyterと呼ばれるプログラミング学習環境が利用できます。</p>
-<section id="jupyter">
-<h2>Jupyterとは<a class="headerlink" href="#jupyter" title="Permalink to this heading">#</a></h2>
-<p>Jupyterは、三つのプログラミング言語Julia、Python、Rの頭文字を取って名付けられたプログラミング環境です。</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Julia_(programming_language)">Julia (programming language) - Wikipedia</a></p></li>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python (programming language) - Wikipedia</a></p></li>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/R_(programming_language)">R (programming language) - Wikipedia</a></p></li>
-</ul>
-<p>具体的には、Jupyter Notebookというファイル形式 (拡張子は<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) の編集環境が提供され、
-Webブラウザベースのインタラクティブな環境でプログラムコードを書き、実行できます。</p>
-<p>Jupyterはテキスト、画像、数式、グラフなどを一緒に表示できるため、
-データ分析や機械学習、教育など様々な場面で利用されています。
-また、Markdown記法やLaTeXを使った数式の記述もサポートしており、
-コードと並行して説明文を書くことも可能です。</p>
-<p>Jupyter Notebookはセルと呼ばれる単位でコードを書き、
-それぞれのセルを個別に実行できます。
-これにより、一部のコードを変更した場合でも全体を実行しなおす必要がなく、
-対話的なデータ分析や開発が可能になります。</p>
-</section>
-<section id="windows">
-<h2>Windows仮想デスクトップ・サービス<a class="headerlink" href="#windows" title="Permalink to this heading">#</a></h2>
-<p>Anaconda Navigatorの使い方は、別の資料をご参照ください。</p>
-</section>
-<section id="vioras-jupyterhub">
-<h2>VIORAS JupyterHub<a class="headerlink" href="#vioras-jupyterhub" title="Permalink to this heading">#</a></h2>
-<p>VIORAS JupyterHubは、OUMailアカウント保持者がアクセスできるWebサービスです。
-多要素認証が通ると、Jupyterプログラミング環境を利用できます。</p>
-<p>接続しているのは、Windows仮想デスクトップ・サービスとは全く異なるLinuxサーバです。
-システムの制約から、OneDriveなどのファイル共有機能は提供されませんが、
-ホームディレクトリの内容は永続的に保持されていて、2023年10月からの設定では、4GBを使うことができます。
-Webブラウザが稼働しているローカルマシンとのファイル交換機能が提供されています。</p>
-<figure class="align-left" id="id2">
-<a class="reference internal image-reference" href="_images/c10eee0b-8fd2-49bc-856d-c8d754d009f1.png"><img alt="_images/c10eee0b-8fd2-49bc-856d-c8d754d009f1.png" src="_images/c10eee0b-8fd2-49bc-856d-c8d754d009f1.png" style="width: 90%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Windows仮想デスクトップ・サービスとVIORAS JupyterHubの構成</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</figcaption>
+<h1>ファイル共有<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>JupyterHubでは、
+単一の利用者 <code class="docutils literal notranslate"><span class="pre">jovyan</span></code> だけが利用できる環境にログインすることにより、安全・安心な利用が担保されます。
+しかし、システムの制約から共有型ファイル・システムが使えず、また、
+Linux環境であるため公認された手段ではOneDriveのような同期型クラウド・ストレージが使えません。
+このため、
+VIORAS JupyterHubに接続しているPCを介してファイルを手動で共有 (アップロード・ダウンロード) する必要があります。</p>
+<p>以下では、VIORAS JupyterHub接続しているPCとファイルを共有する手法を紹介します。
+また、プログラミングに際して、非同期型の大規模クラウド・ストレージを直接操作する手法を紹介します。</p>
+<section id="jupyterlab-filer-browser">
+<h2>JupyterLab Filer Browser<a class="headerlink" href="#jupyterlab-filer-browser" title="Permalink to this heading">#</a></h2>
+<p>左サイドバーのアイコン列の一番上からファイル・ブラウザを選択します。</p>
+<figure class="align-default">
+<img alt="_images/6a178321-dea5-4e90-b08f-403b1bb51530.png" src="_images/6a178321-dea5-4e90-b08f-403b1bb51530.png" />
 </figure>
+<section id="id2">
+<h3>ファイルのアップロード<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<p>ファイル・ブラウザのアップロード・アイコンをクリックすると、PCのファイル選択画面が表示されます。
+アップロードしたいファイルを選択してください。</p>
+<figure class="align-default">
+<img alt="_images/ae3cd649-92ff-4973-b77e-16fe56de2092.png" src="_images/ae3cd649-92ff-4973-b77e-16fe56de2092.png" />
+</figure>
+</section>
+<section id="id3">
+<h3>ファイルのダウンロード<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>ファイル・ブラウザから、PCにダウンロードしたいファイルを選択します。
+このとき右クリックしてコンテキスト・メニューを表示させてください
+(Macでは、コントロールキーを押しながらクリック)。
+<code class="docutils literal notranslate"><span class="pre">Download</span></code>を選択すると、PCにファイルがダウンロードされます。</p>
+<figure class="align-default">
+<img alt="_images/d735a588-5e2c-4729-b094-5acfeff10f29.png" src="_images/d735a588-5e2c-4729-b094-5acfeff10f29.png" />
+</figure>
+<p>複数のファイルを選択してダウンロードすることもできます。選択方法は、次の回答を参考にして下さい。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">ai</span> vioras
+複数のファイルを選択する方法
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>ファイルの選択方法は、使用しているオペレーティングシステムによりますが、以下に一般的な方法を示します。</p>
+<p><strong>Windows OSやLinux OSでの方法:</strong></p>
+<ul class="simple">
+<li><p><strong>連続するファイルを選択:</strong> ファイルのリストの最初のファイルをクリックし、Shiftキーを押しながらリストの最後のファイルをクリックします。</p></li>
+<li><p><strong>非連続するファイルを選択:</strong> Ctrlキーを押しながら、選択したいファイルを個別にクリックします。</p></li>
+</ul>
+<p><strong>Mac OSでの方法:</strong></p>
+<ul class="simple">
+<li><p><strong>連続するファイルを選択:</strong> ファイルのリストの最初のファイルをクリックし、Shiftキーを押しながらリストの最後のファイルをクリックします。</p></li>
+<li><p><strong>非連続するファイルを選択:</strong> コマンドキーを押しながら、選択したいファイルを個別にクリックします。</p></li>
+</ul>
+<p>これらの操作は、デスクトップ上のファイルやフォルダ、またはファイルエクスプローラー（Windows）、ファインダー（Mac）、または適切なファイルマネージャー（Linux）内のファイルやフォルダに対して行うことができます。</p>
+</div>
+</div>
+</section>
+<section id="id4">
+<h3>アーカイブ・ファイルのアップロードとダウンロード<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<p>VIORAS JupyterHubには機能拡張が導入されているので、ZIPアーカイブされたファイルをアップロードして展開することができます。
+また、フォルダのファイルをZIPアーカイブして一括してダウンロードすることができます。</p>
+<p>アップロードしたZIPファイルを展開するには、ファイルを右クリックして <code class="docutils literal notranslate"><span class="pre">Extract</span> <span class="pre">Archive</span></code> を選択します。</p>
+<figure class="align-default">
+<img alt="_images/f189315b-009e-4559-9c32-5e20c7e352a2.png" src="_images/f189315b-009e-4559-9c32-5e20c7e352a2.png" />
+</figure>
+<p>カレント・フォルダのファイルをZIPあーカーブして一括ダウンロードすることができます。
+この際、右クリックする場所は、フォルダ内のどこでも (いずれのファイルでも余白でも) 構いません。</p>
+<figure class="align-default">
+<img alt="_images/d004e166-2822-43f1-839a-2649fbb71333.png" src="_images/d004e166-2822-43f1-839a-2649fbb71333.png" />
+</figure>
+</section>
+</section>
+<section id="id5">
+<h2>プログラミングでの大規模なファイルの利用<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://vioras.github.io/z2azure/">Zero to Azure on VIORAS</a> を参照してください。</p>
 </section>
 </section>
 
@@ -489,20 +522,20 @@ Webブラウザが稼働しているローカルマシンとのファイル交�
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="intro.html"
+       href="02_jupyterhub.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Zero to VIORAS JupyterHub</p>
+        <p class="prev-next-title">VIORAS JupyterHubへの接続と終了</p>
       </div>
     </a>
     <a class="right-next"
-       href="02_jupyterhub.html"
+       href="90_troubleshoot.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">VIORAS JupyterHubへの接続と終了</p>
+        <p class="prev-next-title">トラブルシュート</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -521,9 +554,13 @@ Webブラウザが稼働しているローカルマシンとのファイル交�
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter">Jupyterとは</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#windows">Windows仮想デスクトップ・サービス</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vioras-jupyterhub">VIORAS JupyterHub</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyterlab-filer-browser">JupyterLab Filer Browser</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">ファイルのアップロード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ファイルのダウンロード</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">アーカイブ・ファイルのアップロードとダウンロード</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">プログラミングでの大規模なファイルの利用</a></li>
 </ul>
   </nav></div>
 
