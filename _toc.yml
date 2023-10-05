@@ -4,6 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: 01_jupyter.ipynb
-- file: 02_jupyterhub.ipynb
-- file: 90_troubleshoot.ipynb
+- file: 01_jupyter
+- file: 02_jupyterhub
+- file: 50_fileshare
+- file: 90_troubleshoot

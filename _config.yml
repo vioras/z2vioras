@@ -3,6 +3,7 @@
 
 title: Zero to VIORAS
 author: Manabu Higashida
+copyright: "2023"
 logo: vioras-logo.png
 
 # Force re-execution of notebooks on each build.
