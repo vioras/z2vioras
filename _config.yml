@@ -39,3 +39,21 @@ launch_buttons:
 repository:
   url                       : https://github.com/vioras/z2vioras  # The URL to your book's repository
   branch                    : main  # Which branch of the repository should be used when creating links
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - attrs_inline
+    - colon_fence
+    # - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - strikethrough
+    - substitution
+    - tasklist
