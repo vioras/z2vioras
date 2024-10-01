@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>VIORAS JupyterHubへの接続と終了 &#8212; Zero to VIORAS</title>
   
@@ -19,49 +18,45 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="_static/togglebutton.js"></script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '02_jupyterhub';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -76,10 +71,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -120,11 +114,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -139,9 +136,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="intro.html">
+  
   
   
   
@@ -151,12 +150,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="_static/vioras-logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/vioras-logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/vioras-logo.png" class="logo__image only-light" alt="Zero to VIORAS - Home"/>
+    <script>document.write(`<img src="_static/vioras-logo.png" class="logo__image only-dark" alt="Zero to VIORAS - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -225,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://ecsosaka-jh2300.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/vioras/z2vioras&urlpath=lab/tree/z2vioras/02_jupyterhub.ipynb&branch=main" target="_blank"
+      <li><a href="https://vioras-jh2400.japaneast.cloudapp.azure.com/hub/user-redirect/git-pull?repo=https%3A//github.com/vioras/z2vioras&urlpath=lab/tree/z2vioras/02_jupyterhub.ipynb&branch=main" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onJupyterHub"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -355,6 +365,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -364,6 +375,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -397,8 +409,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">VIORAS JupyterHubの主な特徴</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">VIORAS JupyterHubに接続する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">実行するサーバを選択する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">VIORAS JupyterHubを終了する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">VIORAS JupyterHubを終了する</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-ai-chat">ファイルブラウザをJupyter AI Chatに切り替える</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt">ChatGPTを家庭教師にして自習する</a></li>
 </ul>
@@ -410,10 +421,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="vioras-jupyterhub">
-<h1>VIORAS JupyterHubへの接続と終了<a class="headerlink" href="#vioras-jupyterhub" title="Permalink to this heading">#</a></h1>
+<h1>VIORAS JupyterHubへの接続と終了<a class="headerlink" href="#vioras-jupyterhub" title="Link to this heading">#</a></h1>
 <p>ここでは、WebブラウザからVIORASのJupyterHubに接続し、
 VIORASがサービス提供しているChatGPT (Jupyter AI Chat) を使ってPythonのプログラミングを自習する手順を説明します。</p>
 <div class="admonition note">
@@ -422,7 +433,7 @@ VIORASがサービス提供しているChatGPT (Jupyter AI Chat) を使ってPyt
 Jupyterの名前は、主にサポートしている3つのプログラミング言語、Julia、Python、そしてRから取られています。</p>
 </div>
 <section id="id1">
-<h2>VIORAS JupyterHubの主な特徴<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<h2>VIORAS JupyterHubの主な特徴<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>最新のPythonとJuliaによる対話的なプログラミング (今のところRはサポートしていません)</p></li>
 <li><p>Language Server Protocolによるプログラミング支援</p></li>
@@ -432,7 +443,7 @@ Jupyterの名前は、主にサポートしている3つのプログラミング
 </ol>
 </section>
 <section id="id2">
-<h2>VIORAS JupyterHubに接続する<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>VIORAS JupyterHubに接続する<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>Webブラウザから <a class="reference external" href="https://ecsosaka-jh2300.japaneast.cloudapp.azure.com/">https://ecsosaka-jh2300.japaneast.cloudapp.azure.com/</a> にアクセスするとVIORAS JupyterHubに接続し、
 認証を促す “Sign in with Azure AD” というボタンが表示されます。
 ボタンを押すと、Microsoftのサインイン画面に遷移するので、
@@ -449,33 +460,7 @@ OUMailアカウントで多要素認証を行ってください。</p>
 </figure>
 </section>
 <section id="id3">
-<h2>実行するサーバを選択する<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>2023年度秋冬学期から、システム更新に伴って、
-接続時に実行するサーバを選択する必要があります。
-現在、提供されているのは次の2種類のサーバになります。</p>
-<ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">default</span></code></p>
-<ul class="simple">
-<li><p>Pythonのみ使える</p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">w/julia</span></code></p>
-<ul class="simple">
-<li><p>PythonとJuliaが使える</p></li>
-</ul>
-</li>
-</ol>
-<p>授業でいずれのサーバを利用するかは教員の指示に従って下さい。
-特に指示がない場合 (Juliaを使わない場合) は、そのまま<code class="docutils literal notranslate"><span class="pre">Start</span></code>ボタンを押してください。</p>
-<figure class="align-default">
-<img alt="_images/d4e4d1c3-69cd-4f3e-b2ef-be99693dc871.png" src="_images/d4e4d1c3-69cd-4f3e-b2ef-be99693dc871.png" />
-</figure>
-<figure class="align-default">
-<img alt="_images/af2ea004-f558-4374-b9ce-107657879d84.png" src="_images/af2ea004-f558-4374-b9ce-107657879d84.png" />
-</figure>
-</section>
-<section id="id4">
-<h2>VIORAS JupyterHubを終了する<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<h2>VIORAS JupyterHubを終了する<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <p>JupyterHubを終了するには、FileメニューからLog Outを選択してください。</p>
 <p>この操作は、Jupyterが動作しているサーバを停止していませんので、直後であればセッションに再接続して作業を再開することができます。
 ただし、無操作状態が続くとサーバは自動停止します (一時間くらい)。それ以降に再接続すると改めてサーバが起動し、新しいセッションが開始されます。</p>
@@ -484,7 +469,7 @@ OUMailアカウントで多要素認証を行ってください。</p>
 </figure>
 </section>
 <section id="jupyter-ai-chat">
-<h2>ファイルブラウザをJupyter AI Chatに切り替える<a class="headerlink" href="#jupyter-ai-chat" title="Permalink to this heading">#</a></h2>
+<h2>ファイルブラウザをJupyter AI Chatに切り替える<a class="headerlink" href="#jupyter-ai-chat" title="Link to this heading">#</a></h2>
 <p>VIORASは、標準的なJupyterLabに対して多くの機能拡張を行っています。
 最も最新の機能拡張はJupyter AIで、VIORASではユーザ登録をしなくてもChatGPT (GPT-4/32,200コンテキスト) を使うことができます。</p>
 <p>標準では「ファイルブラウザ」が有効になっています。</p>
@@ -497,7 +482,7 @@ OUMailアカウントで多要素認証を行ってください。</p>
 </figure>
 </section>
 <section id="chatgpt">
-<h2>ChatGPTを家庭教師にして自習する<a class="headerlink" href="#chatgpt" title="Permalink to this heading">#</a></h2>
+<h2>ChatGPTを家庭教師にして自習する<a class="headerlink" href="#chatgpt" title="Link to this heading">#</a></h2>
 <p>例えば次のように入力してJupyterでのプログラミングを初めてください。
 これらの入力をプロンプトとよび、ChatGPTからの答えをレスポンスといいます。</p>
 <ol class="arabic simple">
@@ -555,7 +540,7 @@ Jupyterプロジェクトの天文学へのオマージュを反映していま�
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="01_jupyter.html"
@@ -584,6 +569,7 @@ Jupyterプロジェクトの天文学へのオマージュを反映していま�
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Contents
@@ -592,8 +578,7 @@ Jupyterプロジェクトの天文学へのオマージュを反映していま�
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">VIORAS JupyterHubの主な特徴</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">VIORAS JupyterHubに接続する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">実行するサーバを選択する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">VIORAS JupyterHubを終了する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">VIORAS JupyterHubを終了する</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-ai-chat">ファイルブラウザをJupyter AI Chatに切り替える</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#chatgpt">ChatGPTを家庭教師にして自習する</a></li>
 </ul>
@@ -617,6 +602,7 @@ By Manabu Higashida, Cybermedia Center, Osaka University, Japan
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2023.
@@ -643,8 +629,8 @@ By Manabu Higashida, Cybermedia Center, Osaka University, Japan
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
