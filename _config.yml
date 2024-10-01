@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Zero to VIORAS
-author: Manabu Higashida
+author: Manabu Higashida, Cybermedia Center, Osaka University, Japan
 copyright: "2023"
 logo: vioras-logo.png
 
@@ -34,7 +34,7 @@ html:
 
 launch_buttons:
   notebook_interface        : "jupyterlab"
-  jupyterhub_url            : https://ecsosaka-jh2300.japaneast.cloudapp.azure.com
+  jupyterhub_url            : https://ecsosaka-jh2400.japaneast.cloudapp.azure.com
 
 repository:
   url                       : https://github.com/vioras/z2vioras  # The URL to your book's repository
