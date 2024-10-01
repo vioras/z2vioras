@@ -34,7 +34,7 @@ html:
 
 launch_buttons:
   notebook_interface        : "jupyterlab"
-  jupyterhub_url            : https://ecsosaka-jh2400.japaneast.cloudapp.azure.com
+  jupyterhub_url            : https://vioras-jh2400.japaneast.cloudapp.azure.com
 
 repository:
   url                       : https://github.com/vioras/z2vioras  # The URL to your book's repository
